@@ -1,16 +1,3 @@
-// single line comment
-/*
-
-Multiline comment
-
-*/
-
-// document.write("<h1>I can't wait for <em>spring!</em></h1>");
-
-
-//alert("warning! Will Robinson...Warning!");
-
-//confirm("Do you like pokemon?");
 
 //prompt("What type of pokemon do you like?");
  
@@ -40,9 +27,29 @@ function Game(){
         if(resume){
             Prison();
         }
-        else{
-            alert("Game Over!");
-        }
-    }    
+            else{
+                alert("Game Over!");
+            }
+        }    
     }
+     function Swamp(){
+        var swampEnv = prompt("This is a dank swamp. /n -follow path /n -swim");
+        if(swampEnv == "follow") || swampEnv == ("follow path"){
+            var swampPath = prompt("You enter on the swamp path and head north in the distance you see a swamp hut. As you approach you see a light burning inside. /n -enter hut /n -burn down hut");
+        }
+        if( swampPath = "enter"){
+            alert("You enter the hut. There is an old hag bend over a black cauldron on the fire in the hearth");
+        }
+        else if(swampPath = "burn down hut"){
+            alert("You burn down the hut...hope you feel good about yourself... Pyro!")
+        }
+        else{
+            alert("don't throw rocks at hut...please!")
+        }
+        else if(SwampEnv == "Swim"){
+        }
+        else{
+            alert("I don't understand"+swampEnv);
+        }
+
 }
