@@ -24,12 +24,21 @@ Multiline comment
     var enemy = {
         sword:0,
     }
-   
+    
+    function GetRandint(max){
+        var randInt = Math.floor(Math.random()* Math.floor(max));
+        
+        return randInt;
+    }
+
+// Start Game
 Game();
 
 function Game(){
+    
+    var wizardNames = ["Bethazar", "Mordac", "Grendor", "Orco"];
 	
-	alert("Legend of the Cactus Dragon!");
+	alert("Legend of "+wizardNames[Math.floor(Math.random()* 4)]+"!");
 	
 	var playerName = prompt("What is your name?");
 	
@@ -90,7 +99,7 @@ function Game(){
 		
 		
 	}
-        funtion Blacksmith Shop(){
+        function blacksmith(){
         alert("The blacksmith")
         
             var blacksmith = prompt("What do you want to buy? /n - sword /n - shield /n - armor /n leave shop");
@@ -113,6 +122,36 @@ function Game(){
                         }
                 }
     }
+        function Castle(){
+            var insideCastle = prompt("-upstairs -downstairs -courtyard -balcony -look").toLowerCase();
+            
+            switch(insideCastle){
+                case "upstairs" || "go upstairs":
+                var upstairs = prompt("you head to to floor of castle");
+                    
+                Castle();
+                break;
+                case "downstairs":
+                    alert("you go downstairs");
+                    
+                break;
+                case "courtyard":
+                    alert("you go to the courtyard");
+                    Castle();
+                break;
+                case "balcony":
+                    alert("you go to balcony");
+                    Castle();
+                break;
+                default:
+                    alert("I don't know what "+insideCastle+"is");
+                    Castle();
+                break;
+                    
+                    
+                    
+            }
+        }
     
     
     
