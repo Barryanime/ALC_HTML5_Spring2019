@@ -15,6 +15,12 @@ Multiline comment
 
     // Javascript Object for an inventory
 
+//check coins expression. To check the expression call just like a function ex. checkCoins();
+    var checkCoins = function(){
+        alert("Gold Coins: "+player.inventory.coins.gold+"\n Silver Coins: "
+        +player.inventory.coins.silver+"\n Copper Coins: "+player.inventory.coins.copper);
+    }
+
     var inventory = {
         coins:1000,
         bread:0,
