@@ -75,6 +75,24 @@ function Game(){
 				alert("Game Over!");
 			}
 		}
+        
+        else if(prison == "swamp"){
+            Swamp();
+            }
+        
+        else if(prison == "blacksmith"){
+            blacksmith();
+            }
+        
+        else if(prison == "castle"){
+			Castle();
+}
+        
+        else if(prison == "shop"){
+            Shop();
+            }
+        
+        
 		else{
 			alert("I don't know what "+prison+" is!");
 			Prison();
@@ -116,7 +134,7 @@ function Game(){
                     var swordBuy = confirm("Are you sure you want to buy this sword?");
                         if(swordBuy){
                             //Adds sword +1
-                            invenotry.sword ++;
+                            inventory.sword ++;
                             //displays swords owned
                             alert("You own " +inventory.sword+" swords");
                             // Takes money out of accound for sword
@@ -130,6 +148,10 @@ function Game(){
                             Blacksmith();
                         }
                 }
+            else{
+			alert("I don't know what "+blacksmith+" is!");
+			Blacksmith();
+		}
     }
         function Castle(){
             var insideCastle = prompt("-upstairs -downstairs -courtyard -balcony -look").toLowerCase();
@@ -186,6 +208,10 @@ function Game(){
         else if(purchase == "exit"|| purchase == "leave"){
                     Prison();
         }
+        else{
+			alert("I don't know what "+purchase+" is!");
+			Shop();
+		}
         
     }
     
