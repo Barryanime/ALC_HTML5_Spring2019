@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style> 
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(akatsuki.jpg) 15 stretch;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px white;
+}
+</style>
+<body>
+
+ <h1>Anime</h1>   
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+<body id="body"></body>
+ <img id="myImage" src="narutorasengan.jpg" style="width:500px; height:375px;">   
+<script>
+document.getElementById("p2").style.color = "red";
+document.getElementById("p2").style.fontFamily = "Arial";
+document.getElementById("p2").style.fontSize = "larger";
+document.getElementById("body").style.background = "blue";
+document.getElementById("p1").style.color = "purple";
+document.getElementById("p2").style.border = "solid";
+</script>
+<p>The paragraph above was chaged by a script.</p>
+
+</body>
+</html>
+        
