@@ -13,9 +13,6 @@ Multiline comment
 
 //prompt("What type of pokemon do you like?");
 
-// Javascript Object for an inventory
-
-//check coins expression. To check the expression call just like a function ex. checkCoins();
 var checkCoins = function(){
   alert("Gold Coins: "+player.inventory.coins.gold+"\n Silver Coins: "
         +player.inventory.coins.silver+"\n Copper Coins: "+player.inventory.coins.copper);
@@ -53,7 +50,7 @@ function Game(){
   Prison();
 
   function Prison(){
-    var prison = prompt("You woke up and you realized you are in a prison. \n -look around \n - sleep \n ~OR GO TO~ \n swamp \n blacksmith \n house \n shop").toLowerCase();
+    var prison = prompt("You woke up and you realized you are in a prison. \n -look \n - sleep \n ~OR GO TO~ \n swamp \n blacksmith \n house \n shop").toLowerCase();
 
     if(prison == "look around" || prison == "look"){
       var prisonLook = prompt("The prison is small with bugs squirming on the floor, there is a strange rug on the floor.  \n -move rug \n -eat bugs");
@@ -104,9 +101,9 @@ function Game(){
   }
 
   function Swamp(){
-    var swampEnv = prompt("You are at a swamp. \n -follow path \n -swim");
+    var swampEnv = prompt("You are at a swamp. \n -follow pathway \n -swim");
 
-    if(swampEnv == "follow" || swampEnv == "follow path"){
+    if(swampEnv == "follow" || swampEnv == "follow pathway"){
       var swampPath = prompt("You followed the path, heading north and saw a swamp hut. \n -enter hut \n -burn hut");
       if( swampPath = "enter hut"){
         alert("You entered the hut.");
@@ -132,7 +129,7 @@ function Game(){
   function blacksmith(){
     alert("The blacksmith")
 
-    var blacksmith = prompt("What do you want to buy? /n - sword /n - shield /n leave shop");
+    var blacksmith = prompt("What do you want to buy? /n - sword /n - shield \n -spear /n leave shop");
     if(blacksmith == "sword" || blacksmith == "buy sword" && inventory.coins >= 100){
       var swordBuy = confirm("Are you sure you want to buy this sword?");
       if(swordBuy){
