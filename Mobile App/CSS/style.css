@@ -19,7 +19,7 @@ div#container{
     background-color:azure;
 }
 header{
-    width:91.5%;
+    width:100;
     padding:50px;
     background-color: lightgrey;
 }
@@ -32,6 +32,7 @@ div#content{
     width:100;
     background-color: aliceblue;
 }
+/*
 nav{
     background-color: skyblue;
     color: ghostwhite;
@@ -54,6 +55,8 @@ div.keepOpen{
     clear: both;
     
 }
+*/
+/*
 nav ul li a{
     float:left;
     display: block;
@@ -67,7 +70,9 @@ nav ul li a:hover{
     background-color: none;
     color:antiquewhite;
 }
+*/
 
+/*
 @media screen and (max-width: 600px) {
     div#container{
         width:100%;
@@ -77,4 +82,23 @@ nav ul li a:hover{
         text-align:center;
     }
 }
-    
+    */
+
+.icon-bar {
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    background-color: #555;
+    overflow:auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all .3s ease;
+    color: white;
+    font-size: 36px;
+}
