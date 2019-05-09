@@ -15,7 +15,7 @@ body{
 
 div#container{
     width:100%;
-    border:3px dashed black;
+    border:3px dashed lightgrey;
     background-color:azure;
 }
 header{
@@ -23,14 +23,53 @@ header{
     padding:50px;
     background-color: lightgrey;
 }
+
+header img#applogo{
+    display: block;
+    margin: auto;
+    width: 100px;
+}
+
 header h1{
     color: darkblue;
+    text-align: center;
     font-family: 'Bungee Shade', cursive;
     font-size: 3.14159265358979323846264em;
 }
-div#content{
+di
+v#content{
     width:100;
     background-color: aliceblue;
+}
+
+    div#product_grp{
+        width:auto;
+        margin:auto;
+    }
+
+figure.product{
+    float: left;
+    width:20%;
+    background-color:blue;
+}
+
+figure.product img {
+    display:block;
+    padding: 10px 0;
+    width:auto;
+    margin:auto;
+}
+
+fig.product figcaption {
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+    font-size: 1.5em;
+
+}
+ul#anime{
+    text-align: center;
+    list-style-type: square;
 }
 /*
 nav{
@@ -85,7 +124,7 @@ nav ul li a:hover{
     */
 
 .icon-bar {
-    position:absolute;
+    position:fixed;
     bottom:0;
     left: 0;
     width: 100%;
@@ -101,4 +140,12 @@ nav ul li a:hover{
     transition: all .3s ease;
     color: white;
     font-size: 36px;
+}
+
+.icon-bar a:hover{
+    background-color: #000;
+}
+
+.active{
+    background-color: mediumpurple;
 }
