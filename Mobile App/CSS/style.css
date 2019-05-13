@@ -36,21 +36,25 @@ header h1{
     font-family: 'Bungee Shade', cursive;
     font-size: 3.14159265358979323846264em;
 }
-di
-v#content{
+div#content{
     width:100;
     background-color: aliceblue;
 }
 
     div#product_grp{
-        width:auto;
+        max-width:60%;
+        min-width:20%;
         margin:auto;
     }
 
 figure.product{
+    display: block;
     float: left;
-    width:20%;
-    background-color:blue;
+    margin: 10px 15px;
+    min-width: 30%;
+    max-width: 45%;
+    background-color:cadetblue;
+    border-radius:5%;
 }
 
 figure.product img {
@@ -64,9 +68,32 @@ fig.product figcaption {
     text-align: center;
     color: black;
     font-family: fantasy;
-    font-size: 1.5em;
+    font-size: 24px;
 
 }
+
+div.keepOpen{
+    clear:both;
+}
+
+@media screen and (max-width: 600px) {
+	figure.product{
+		float:none;
+		margin:10px auto;
+		min-width:50%;
+		max-width:100%;
+		background-color: cadetblue;
+		border-radius:5%;
+	}
+	figure.product figcaption{
+	text-align: center;
+	color:white;
+	font-family: fantasy;
+	font-size:12px;
+}
+
+}
+    
 ul#anime{
     text-align: center;
     list-style-type: square;
