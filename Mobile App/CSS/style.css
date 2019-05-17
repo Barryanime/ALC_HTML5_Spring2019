@@ -37,7 +37,7 @@ header h1{
     font-size: 3.14159265358979323846264em;
 }
 div#content{
-    width:100;
+    width:100%;
     background-color: aliceblue;
 }
 
@@ -93,23 +93,20 @@ div.keepOpen{
 }
 }
     
-    legend, span, input, textarea{
-        display: block;
-        margin: auto;
-        text-align: center;
-        font-family: sans-serif;
-        
-    }
 
+	 legend, span, input, textarea {
+		display:block;
+		margin:auto;
+		text-align:center;
+		font-family:sans-serif;
+		color:black;
+	}
 textarea{
     text-align: left;
 }
 
     
-ul#anime{
-    text-align: center;
-    list-style-type: circle;
-}
+
 /*
 nav{
     background-color: skyblue;
